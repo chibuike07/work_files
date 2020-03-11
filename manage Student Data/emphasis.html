@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>purple</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: 0;
+      }
+      .holders {
+        display: flex;
+        justify-content: space-between;
+        margin: 5%;
+        height: 80vh;
+      }
+      .ques {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        height: 60vh;
+        background: cornflowerblue;
+        margin-right: 0%;
+      }
+      .ques p {
+        text-align: center;
+        padding: 3%;
+        color: #fff;
+      }
+      .ans {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        height: 60vh;
+        background: #eee;
+        margin-left: 0%;
+      }
+      .ans p {
+        padding: 3%;
+        text-align: center;
+        text-transform: capitalize;
+        color: #000;
+      }
+      .purpose {
+        font-family: fantasy;
+        font-size: 25px;
+        text-transform: uppercase;
+      }
+      .btn {
+        position: absolute;
+        width: 10%;
+        top: 50%;
+        left: 20%;
+        background-color: cornflowerblue;
+      }
+      .btn button {
+        width: 50%;
+        height: 5vh;
+        border-radius: 40%;
+        outline: none;
+        box-shadow: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="holders">
+      <div class="ques">
+        <p id="ques" class="purpose">purpose</p>
+        <div class="btn">
+          <button onclick="slide()">>></button>
+        </div>
+      </div>
+      <div class="ans">
+        <p id="ans" class="purpose"></p>
+      </div>
+    </div>
+  </body>
+  <script>
+    const obj = [
+      {
+        question: "what is this application all about",
+        answer:
+          "this is a grading application that enable schools to manage their collection of student results data"
+      },
+      {
+        question: "who are we targeting",
+        answer:
+          "we are targeting schools; nursery, primary, secondary, high institutions and organisation that stands to engage in data analysis project"
+      },
+      {
+        question: "what is the benefit",
+        answer:
+          "easy collection of data  ' \n '  it save stress  ' \n '  saves funding  ' \n '  reference use"
+      }
+    ];
+    let pElement = document.getElementById("ques");
+    let ans = document.getElementById("ans");
+
+    let length = 2;
+
+    function slide() {
+      let question = obj.map(n => n.question);
+      length = length + 1;
+      length = length % question.length;
+      let b = question[length];
+      pElement.innerText = question[length];
+      pElement.addEventListener("click", questionClick);
+      ans.innerText = "";
+      if (pElement.innerText.toLowerCase() == question[2]) {
+        document.onkeydown = e => {
+          if (e.keyCode == 32) {
+            e.preventDefault();
+            location.replace("manage_data.html");
+          }
+        };
+      }
+    }
+
+    function questionClick() {
+      obj.forEach(text => {
+        if (text.question.toUpperCase() === this.innerText) {
+          ans.innerText = text.answer;
+        }
+      });
+    }
+  </script>
+</html>

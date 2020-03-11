@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap");
+.over_all {
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  background-color: #fff;
+  width: max-content;
+  margin: auto;
+  height: 93.8%;
+}
+
+.topArea {
+  text-transform: lowercase;
+  font-family: sans-serif;
+  color: #3b3464;
+  font-weight: bolder;
+  margin-left: 9%;
+}
+.topArea h1 {
+  font-weight: bold;
+  font-family: "Rubik Mono One";
+}
+sup {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+small {
+  text-transform: lowercase;
+  font-size: 40%;
+  position: absolute;
+  left: 12%;
+}
+
+.emphaz {
+  display: grid;
+  grid-gap: 2px;
+}
+
+.b {
+  display: flex;
+  height: max-content;
+  position: absolute;
+  width: 7%;
+  top: 36%;
+}
+.b strong {
+  background-color: #5aafd8;
+  border-radius: 50%;
+  padding: 20px;
+  width: 2px;
+  height: 50px;
+  font-size: 2em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.emphazA {
+  background-color: #5aafd8;
+  padding: 15px 2%;
+  width: 50%;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.1em;
+  margin-left: 7.5%;
+}
+
+.emphazB {
+  background-color: #5aafd8;
+  padding: 15px 2%;
+  width: 50%;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 7.5%;
+}
+.emphazB::before {
+  content: "";
+  width: 10px;
+  height: 7px;
+  position: absolute;
+  top: 40%;
+  left: 6.7%;
+  border-bottom-left-radius: 200px;
+  background-color: #5aafd8;
+}
+
+.reg {
+  padding: 5px;
+  border: 2px solid #5aafd8;
+  width: 15%;
+  margin-top: 3%;
+  margin-left: 7.5%;
+  text-align: center;
+  color: #5aafd8;
+}
+aside {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5aafd8;
+  height: 69vh;
+  position: absolute;
+  top: 8%;
+  right: 0;
+}
+.cont_cover {
+  position: absolute;
+  width: 20%;
+  background: linear-gradient(to right, #fff 65%, #ccc);
+  height: 8%;
+  top: 22.7%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.cont_mout::before {
+  content: "";
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  background-color: #fff;
+  top: 29%;
+  left: -17%;
+  border-radius: 10px;
+}
+.cont_mout {
+  background-color: #fff;
+  width: 12%;
+  height: 5%;
+  position: absolute;
+  top: 32%;
+}
+.box {
+  height: 60%;
+  width: 60%;
+  background-color: #b8dcec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  top: 17%;
+}
+.container_body {
+  width: 90%;
+  height: 90%;
+  background-color: #8dc2e4;
+  border-radius: 20px;
+  border: none;
+}

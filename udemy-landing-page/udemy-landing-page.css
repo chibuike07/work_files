@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+}
+#input input {
+  width: 400px;
+  height: 50px;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+
+input[type="search"] {
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+.sear {
+  width: 15%;
+}
+.searDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4vw;
+  height: 7.8vh;
+  position: absolute;
+  left: 48.3%;
+  top: 1.1%;
+}
+.searDiv:hover {
+  color: white;
+  background-color: rgb(128, 0, 0);
+}
+.drop-down {
+  display: none;
+  position: absolute;
+  left: 47%;
+  top: 10vh;
+}
+.drop-down a {
+  display: flex;
+  justify-content: center;
+}
+.hov:hover .drop-down {
+  border: 2px solid #fff;
+  background-color: #fff;
+  display: block;
+  padding: 5px;
+}
+.drop-down2 {
+  position: absolute;
+  display: none;
+  left: 56.5%;
+  top: 10vh;
+  color: #000;
+}
+.hov2:hover .drop-down2 {
+  border: 2px solid #fff;
+  background-color: #fff;
+  display: block;
+  padding: 5px;
+}
+.drop-down2 a {
+  display: flex;
+  justify-content: center;
+}
+.drop-down::before,
+.drop-down2::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 200px;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  transform: rotate(-20deg);
+}
+.drop-down3::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 100px;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  transform: rotate(-20deg);
+}
+.hov .b {
+  color: #000;
+  opacity: 0.7;
+}
+.hov2 .c {
+  color: #000;
+  opacity: 0.7;
+}
+.hov a:hover {
+  background-color: #ccc;
+  padding: 10px;
+}
+.hov2 a:hover {
+  background-color: #ccc;
+  padding: 10px;
+}
+.right {
+  display: flex;
+}
+.right img {
+  margin-right: 2px;
+  width: 70px;
+  height: 7vh;
+  padding: 5px;
+  background: gray;
+}
+.right .img .im {
+  padding: 5px;
+  margin-right: 15px;
+}
+.right img:hover {
+  border: 1px solid #eee;
+  border-radius: 50%;
+  outline: none;
+}
+.right .drop-down3 {
+  position: absolute;
+  left: 76%;
+  top: 10vh;
+  display: none;
+  padding: 10px;
+}
+.right .drop-down3 a {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.right .img:hover .drop-down3 {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+}
+.reg {
+  display: flex;
+}
+.sigin {
+  border: 2px solid black;
+  color: black;
+  padding: 10px;
+  margin-right: 10px;
+}
+.sigin:hover {
+  background-color: rgb(128, 0, 0);
+  color: #fff;
+}
+.sigup {
+  border: 2px solid red;
+  background-color: red;
+  color: #fff;
+  padding: 10px;
+}
+.sigup:hover {
+  background-color: rgb(128, 0, 0);
+  border: 2px solid rgb(128, 0, 0);
+  color: #fff;
+}
+
+.udy {
+  background-image: url("bgudemy.jpeg");
+  height: 70vh;
+  background-size: cover;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+}
+.text {
+  margin-left: 7%;
+  font-size: large;
+  line-height: 1.5;
+}
+.text input {
+  width: 35%;
+  height: 7vh;
+  margin-top: 3%;
+  border: none;
+}
+.text h2 {
+  word-spacing: 5px;
+  font-size: 36px;
+}
+.text img {
+  width: 20%;
+}
+.text .body-sear {
+  position: absolute;
+  top: 52.5%;
+  left: 36%;
+  width: 4vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text .body-sear:hover {
+  background-color: rgb(128, 0, 0);
+}
+input[type="search"] {
+  padding-left: 3%;
+  outline: none;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+  height: 10vh;
+}
+.footer .ft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #fff;
+  margin: 1%;
+}

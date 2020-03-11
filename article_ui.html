@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>class work</title>
+    <link rel="stylesheet" href="flex.css" />
+    <style>
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 15vh;
+  background-color: indigo;
+  color: white;
+}
+header h1{
+  margin-top:25px;
+  margin-left: 20px;
+  animation: toggle-color 3s infinite;
+  text-decoration: overline;
+}
+@keyframes toggle-color  {
+  from{
+    font-size: 16px;
+  }
+  to{
+    font-size:25px;
+  }
+}
+header ul {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+  justify-content: center;
+  word-spacing: 30px;
+  margin-bottom: 0px;
+}
+header ul li{
+  margin-top:20px ;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+a:hover, a:active{
+  color: darkcyan;
+
+}
+div{
+  
+  background-color: rgba(150, 049, 150, 0.4);
+  height: 550px;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 0px;
+}
+.container h1 {
+  text-align: center;
+  margin: 0px;
+  line-height: 90px;
+  text-transform: uppercase;
+  
+}
+section aside {
+  margin: 0px 10px 0px 0px;
+  width: 35%;
+  background-color: darkgrey;
+  box-sizing: border-box;
+  padding: 15px;
+overflow-y: scroll;
+}
+section .art {
+  margin: 0px 30px 0px 10px;
+  width: 65%;
+  line-height: 1.5em;
+  background-color: darkcyan;
+  box-sizing: border-box;
+  height: 300px;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Flex Tutorial</h1>
+      <ul>
+        <li>
+          <a href="#" class="h">home</a>
+          <a href="#" class="c">contact</a>
+          <a href="#" class="a">about</a>
+          <a href="#" class="i">service</a>
+        </li>
+      </ul>
+    </header>
+    <div class="container">
+    <h1>chime chime princewill</h1>
+    <section>
+<div class="art">
+      <article class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, exercitationem voluptates! Quas debitis harum, explicabo blanditiis unde rem minus molestiae facilis itaque, dolorem voluptas praesentium inventore officia ex earum aut.</article><br>
+      <article class="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos perspiciatis saepe minus ab numquam? Eius molestiae, ratione id exercitationem pariatur, culpa eveniet aliquam libero nobis aut modi voluptatum repudiandae! </article>
+      </div>
+      <aside>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi, sint quis iusto repellat est dolorem? Quisquam animi pariatur doloribus voluptas, tempora perspiciatis recusandae non voluptatem quo sunt illo laboriosam!    
+      </aside>
+      </aside>
+    </section>
+    </div>
+  </body>
+</html>

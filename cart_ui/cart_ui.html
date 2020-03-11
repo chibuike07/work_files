@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>cart_ui</title>
+    <link rel="stylesheet" href="cart_ui.css" />
+  </head>
+  <body>
+    <header>
+      <h1>hobbyLuv concept</h1>
+      <a href="">home</a>
+      <a href="">contact</a>
+      <a href="">info</a>
+      <a href="">source</a>
+    </header>
+    <div class="container">
+      <img src="sale-img.png" alt="sales" id="sale-logo" />
+      <img src="star.jpeg" alt="star" />
+      <img src="bgshop.jpeg" alt="" />
+      <img src="cart-image.jpeg" alt="slide image" id="img" class="slide" />
+      <div class="ka">
+        <section class="adult">
+          <img src="shoes.jpeg" alt="shoe" class="img" />
+          <img src="wrist watch.jpeg" alt="shoe" class="img" />
+          <img src="bags.jpeg" alt="shoe" class="img" />
+        </section>
+      </div>
+    </div>
+    <script>
+      let count = 0;
+      let empArr = [];
+      let imgHolder = document.getElementById("img");
+      let slideImg = () => {
+        let img = document.getElementsByClassName("img");
+        console.log(img);
+        for (a of img) {
+          empArr.push(a.src);
+        }
+
+        setInterval(slide, 3000);
+      };
+      slideImg();
+      function slide() {
+        let newImage = new Image();
+        count = count + 1;
+        count = count % empArr.length;
+        newImage.setAttribute("src", empArr[count]);
+        imgHolder.src = newImage.src;
+      }
+    </script>
+  </body>
+</html>

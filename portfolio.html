@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link
+    href="https://fonts.googleapis.com/css?family=Lora|Nunito|Oxygen|Titillium+Web&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    .over-all-container {
+      padding: 0px;
+      /* font-family: 'Nunito', sans-serif; */
+      /* font-family: 'Titillium Web', sans-serif; */
+      /* font-family: 'Lora', serif; */
+      font-family: "Oxygen", sans-serif;
+    }
+    #contentBody {
+      margin-top: 0px;
+      display: none;
+      
+    }
+    header img{
+      width: 50px;
+      position: relative;
+      right: 60em;
+      top: .9em;
+     display: none; 
+    }
+    #contentBody p,
+    h2 {
+      padding: 0.3em;
+    }
+    #contentBody #about{
+      margin-top: 0px;
+    }
+
+
+    header {
+      background: repeating-linear-gradient(#396362, #4b8e8d);
+      height: 9em;
+      width: 100%;
+      text-align: right;
+      position: relative;
+    }
+    header nav {
+      text-align: left;
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      display: flex;
+      box-sizing: border-box;
+      
+    }
+    header nav a {
+      padding-right: 2.9em;
+      text-decoration: none;
+      color: black;
+      font-size: x-large;
+    
+    }
+    header nav a:hover{
+      color: #ffe7d1;
+      cursor:progress;
+    }
+
+    header cite {
+      position: absolute;
+      top: 50%;
+      left: 80%;
+      font-size: x-large;
+      
+      padding-right: 0.4em;
+      margin-right: 0.3em;
+      margin-left: 1.9em;
+      color:  #ffe7d1;
+      transform: translate(-80%, -30%);
+    }
+    #container {
+      background-image: repeating-linear-gradient(
+          170deg,
+          rgba(43, 21, 21, 0.452),
+          rgba(0, 0, 0, 0.911)
+        ),
+        url("bgFoto.jpg");
+      background-size: cover;
+      background-repeat: round;
+      height: 500px;
+      background-attachment: fixed;
+      position: relative;
+    }
+    #container .welcome {
+      position: absolute;
+      top: 25%;
+      left: 45%;
+      height: 5em;
+      animation: toggle 3s infinite;
+      padding: 55px 0.4em 0px;
+      color:  #ffe7d1;
+      font-size: larger;
+      transform: translate(-35%, -30%);
+      border-radius: 0.8em;
+      overflow: hidden;
+    }
+
+    @keyframes toggle {
+      from {
+        background: repeating-linear-gradient(#396362, #4b8e8d);
+      }
+      to {
+        font-size: 30px;
+      }
+    }
+    #container button {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      width: 20%;
+      height: 3em;
+      font-size: 1.3em;
+      color: #fff;
+      border-radius: 20px;
+      transform: translate(-50%, -80%);
+      background: repeating-linear-gradient(#396362, #4b8e8d);
+      margin-bottom: 0px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    article {
+      background-image: repeating-linear-gradient(#ffe7d1, #ffe7d1);
+      position: relative;
+      margin-top: 0px;
+    }
+    article p:last-child {
+      margin-bottom: 0px;
+      padding-bottom: 0.5em;
+    }
+
+    section {
+      background-image: repeating-linear-gradient(#ffe7d1, #ffe7d1);
+      height: 70px;
+      position: relative;
+      margin-bottom: 0px;
+      padding-top: 0.5em;
+    }
+    section p,
+    a {
+      margin-top: 0px;
+    }
+    section a {
+      text-decoration: none;
+    }
+    footer {
+      background: #396362;
+      color: #000;
+      height: 5em;
+      position: relative;
+    }
+    footer p {
+      font-size: 0.9em;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -90%);
+    }
+    .top button {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      top: 550px;
+      border-radius: 50%;
+      width: 100px;
+      background: repeating-linear-gradient(#396362, #4b8e8d);
+      font-size: larger;
+      outline: none;
+      cursor: pointer;
+      color: #fff;
+    }
+    #image img {
+      width: 150px;
+      float: left;
+      border-radius: 50%;
+      padding: .5em;
+      position: relative;
+      top: 1.7em;
+    }
+    .abt{
+      position: relative;
+      top: .8em;
+    }
+    #about{
+      position: relative;
+      top: .9em;
+    }
+    #portfolio{
+      position: relative;
+      top: .9em;
+      padding-top: 2.8em;
+    }
+    header #menu-img{
+      display: none;
+    }
+    @media only screen and (max-width:550px){
+      header{
+        width: 100%;
+      }
+      header #menu-img{
+        display: block;
+      }
+      header nav{
+        position: relative;
+        top:.5em;
+     
+      }
+      header a{
+        display: none;
+      }
+      header nav a:nth-child(1){
+      position: relative;
+      bottom:3px
+      }
+      header nav a:nth-child(2){
+        position:relative;
+        top: .8em;
+        right: 5.8em;
+        padding-top: .4em;
+      }
+      header nav a:nth-child(3){
+      position: relative;
+      top: .6em;
+    }
+    header cite{
+      color: yellow;
+      position: absolute;
+      left: 9.3em;
+
+    }
+    #container button{
+      width: 7.4em;
+    }
+    .abt{
+      padding-bottom: 2em;
+      
+    }
+    .abt span {
+      padding-left: .2em;
+      color: blue;
+    }
+#portfolio{
+  position: relative;
+  margin-top: .0em;
+  top: -70px;
+}
+.top button{
+ top: 26.3em; 
+ height: 3.0em;
+ width: 2.9em;
+ right: 1.0em;
+
+}
+header img{
+  display: block;
+  position: relative;
+  left: 1.1em;
+  top:3.2em;
+}
+article .after-about{
+  position: relative;
+  top: -80px;
+}
+#contentBody section{
+  position: relative;
+  top: -50px;
+  padding-bottom: 20px;
+  
+}
+footer {
+position: relative;
+top: -49px;
+}
+
+footer p{
+margin-top: 1.5em;
+}
+
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>portfolio</title>
+  </head>
+  <body>
+    <div class="over-all-container">
+      <header id="header">
+        <img src="menu icon.png" alt="" id="menu-img">
+        <nav>
+          <a href="#" class="navbar" id="navbar">Home</a>
+          <a href="#about" class="navbar" id="navbar">About</a>
+          <a href="#portfolio" class="navbar" id="navbar">Portfolio</a>
+        </nav>
+        <cite id="topArea"></cite>
+      </header>
+      <div id="container">
+        <div class="welcome">
+          <p>You re welcome to my portfolio page</p>
+        </div>
+        <button onclick="display()">Get started</button>
+      </div>
+      <div id="contentBody">
+        <article>
+          <div id="image">
+            <img src="bgFoto.jpg" alt="" />
+          </div>
+          <div class="abt">
+          <h2 id="about">about me</h2>
+          <p>
+            I go by the name Chime Chibuike Princewill, i am 
+            very optimistic and always looks forward to euthusiam stage
+            of life. I am current in learnFactory academy on the path of
+            development, believing that one day i will be among the best
+            programmers that not only develop personal application but as well
+            to develop application that support and enhance our society at
+            large. Moreso, am very friendly to all and 
+            a goal getter! Lastly feel free to hook me up on mobile <span>08169543479</span>
+          </p>
+        </div>
+        <h2 id="portfolio">project in learnFactory</h2>
+          <div class="after-about">
+          <p>
+            it was on the 21<sup>th</sup> october 2019, i arrived to the
+            learnFactory firm which is located at aba in abia state. My coming
+            to learnFactory is base on the expansionn of weathers on development
+            which from the day i started receiving lectures till now it has
+            indeed been a happy and well expected experience...
+          </p>
+          <p>
+            prior to now i have been seeing virtual(online) and have proper
+            interaction with the internet but have never got to know how all
+            that is been displayed and been very interctive accross the globe by
+            thank god to learnFactory who has taken it upon them self to let me
+            not only knowing how all those my internet user page is been
+            displayed but also teaching me how to create a web page with the
+            <mark>semantic html5 and pure javascript</mark> enabling a proper
+            adding of content with html5 tags like
+            <cite>header, section, nav, footer tags</cite> and more other tags
+            to work with on the body of my page. while i was still thinking and
+            feeling amazed on how i was enable to add text content to a web
+            browser they told me that
+            <q>this is just serverd me a taste of the web</q> and guess what
+            happens afterwards, they came again with another power tool which
+            known as
+            <mark><abbr title="cascading stylesheet">css</abbr></mark> which
+            plays a great role in the proper styling of a web content;
+            <cite
+              >coloring, positioning, font size, decorations on the tags and
+              more and more.</cite
+            >
+          </p>
+          <p>
+            currently i am being asked to create a responsive web page that have
+            user input and get the user input and append it to the content, i
+            was also asked to add my picture and make it a background image and
+            adding of links that navigates to different sections of my page...
+            <br />
+            guest what! i just did that... smiles. <br />
+            so tell me is development not beautiful? am sure it is, join me and
+            make the world and easy one....
+          </p>
+        </div>
+        </article>
+        <section>
+          <p>
+            please always look out for more of my practice as days comes by. For
+            the code you can visit my github account
+            <a href="https://github.com/chibuike07/learnfactory"
+              >my git account</a
+            >
+          </p>
+        </section>
+        <footer>
+          <p>copyright &copy 2019 learnfactory days with me</p>
+        </footer>
+      </div>
+      <div class="top">
+        <a href="#header"><button>top</button></a>
+      </div>
+    </div>
+    <script>
+      let extracted = decodeURIComponent(window.location.search);
+      extracted = extracted.substring(1);
+
+      function nameData(nameData) {
+        let personData = document.getElementById("topArea");
+        let personDataForWelcomeNote = document.querySelector(".welcome");
+        personData.innerText = nameData;
+        personDataForWelcomeNote.innerText += " " + nameData;
+      }
+      nameData(extracted);
+
+      console.log(extracted);
+      let contentBody = document.getElementById("contentBody");
+      let display = () => {
+        if (contentBody.style.display === "none") {
+          contentBody.style.display = "block";
+        } else {
+          contentBody.style.display = "none";
+        }
+      };
+
+      
+ 
+    </script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+html {
+  image-rendering: optimizeQuality;
+  text-rendering: optimizeLegibility;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+}
+
+.left {
+  background-image: repeating-radial-gradient(
+      rgba(41, 41, 17, 0.9),
+      rgba(104, 104, 194, 0.7)
+    ),
+    url("./wi-fiphone.jpeg");
+
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: darken;
+  background-color: darkblue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.left img {
+  width: 60px;
+}
+.left p {
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+.left p b {
+  /* color: red; */
+  padding: 0 0 0 13%;
+}
+.right {
+  background-image: radial-gradient(
+      rgba(41, 41, 175, 0.6),
+      rgba(104, 104, 194, 0.9)
+    ),
+    url("./wi-fiphone.jpeg");
+
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: darken;
+  background-color: darkblue;
+  background-size: cover;
+  color: #fff;
+}
+.right img {
+  width: 60px;
+  opacity: 0.2;
+}
+.right p {
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+.right p b {
+  /* color: red; */
+  padding: 0 0 0 13%;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  color: #fff;
+  width: 50%;
+  /* transform: rotate(-40%, -30%); */
+}
+.middle i {
+  font-size: 38px;
+  text-transform: capitalize;
+  font-family: "Great Vibes";
+}
+.middle b {
+  text-transform: uppercase;
+  font-size: 10px;
+  /* padding: 0 0 0 3%; */
+}
+.middle small {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 5px;
+}
+@media screen and (max-width: 500px) {
+  .middle {
+    left: 25%;
+    top: 40%;
+  }
+  .middle i {
+    /* color: red; */
+    font-size: 20px;
+  }
+  .right p {
+    margin-left: 20%;
+  }
+  .right b {
+    flex-direction: row;
+    /* color: red; */
+    margin-left: -20%;
+  }
+  .right span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .middle {
+    left: 25%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .middle {
+    /* color: red; */
+    top: 40%;
+    left: 25%;
+  }
+}

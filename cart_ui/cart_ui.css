@@ -1,0 +1,145 @@
+header {
+  background-image: repeating-linear-gradient(
+      rgba(222, 200, 60, 0.5),
+      rgba(243, 33, 22, 0.5)
+    ),
+    url("bg-cart-img.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: round;
+  display: flex;
+}
+header h1 {
+  position: absolute;
+  top: 15%;
+  transform: rotate(-30deg);
+  opacity: 25;
+}
+
+header a {
+  color: #000;
+  position: relative;
+  top: 7em;
+  left: 50%;
+  margin-right: 3em;
+  height: 15em;
+  opacity: 25;
+}
+.container {
+  background-image: repeating-linear-gradient(
+      40deg,
+      rgba(56, 15, 75, 0.2),
+      rgba(22, 170, 1)
+    ),
+    url("light.jpeg");
+  height: 50em;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: round;
+}
+.container {
+  position: relative;
+}
+.container img:first-child {
+  width: 300px;
+  padding: 30px;
+  transform: rotate(30deg);
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  opacity: 0.3;
+}
+.container img:nth-child(2) {
+  width: 15%;
+  position: absolute;
+  top: 4.7%;
+  left: 24%;
+  transform: rotate(60deg);
+  opacity: 0.3;
+}
+.container img:nth-child(3) {
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  transform: rotate(-35deg);
+  opacity: 0.3;
+}
+.container .adult {
+  display: none;
+}
+.slide {
+  width: 40%;
+  position: absolute;
+  left: 32em;
+  top: 15%;
+  border-radius: 50%;
+  background-attachment: fixed;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+  header h1 {
+    transform: skewY(-4deg);
+    padding-left: 4%;
+    text-decoration: overline underline;
+  }
+  header a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    left: 2.3em;
+    transform: translate(-2.3%, -5%);
+  }
+  .container img:nth-child(2) {
+    position: absolute;
+    top: 100px;
+  }
+  .container img:first-child {
+    width: 100px;
+    position: absolute;
+    top: 15em;
+  }
+  .container img:nth-child(3) {
+    width: 100px;
+    height: 80px;
+  }
+  .slide {
+    position: absolute;
+    left: 49%;
+    top: 60%;
+  }
+}
+@media only screen and (min-width: 650px) {
+  body {
+    font-family: sans-serif;
+  }
+  header h1 {
+    position: absolute;
+    top: 8%;
+    left: 2%;
+    font-size: 2.6em;
+    text-transform: capitalize;
+  }
+
+  .slide {
+    position: absolute;
+    left: 57%;
+    top: 30%;
+  }
+  header a {
+    font-size: 1.6em;
+    color: #000;
+    background-attachment: fixed;
+    left: 10%;
+    font-size: 2em;
+  }
+  a:hover {
+    color: red;
+  }
+}

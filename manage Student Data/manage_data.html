@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>student grading sheet</title>
+    <link rel="stylesheet" href="grad.css" />
+  </head>
+  <body>
+    <header>
+      <h1>manage student data</h1>
+    </header>
+    <div class="all-cont">
+      <div class="bod-cont">
+        <div class="tbl">
+          <table id="table">
+            <thead id="thead"></thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <div class="inp">
+          <form
+            action="javascript:;"
+            onsubmit="addTableHead(courseInp.value);"
+            id="form"
+            autocomplete="off"
+          >
+            <input
+              type="text"
+              name="tex"
+              id="tex"
+              placeholder="add your courses"
+            />
+            <input
+              type="button"
+              value="add"
+              class="btn1"
+              onclick="addTableHead(courseInp.value)"
+            />
+          </form>
+          <form id="f" autocomplete="off">
+            <input type="text" name="nm" id="nm" placeholder="add name" />
+            <input
+              type="number"
+              name="en"
+              id="en"
+              placeholder="add course eg english and math"
+            />
+            <input
+              type="number"
+              name="mt"
+              id="mt"
+              placeholder="add course eg english and math"
+            />
+            <input
+              type="number"
+              name="ec"
+              id="ec"
+              placeholder="add course eg english and math"
+            />
+            <input
+              type="number"
+              name="ag"
+              id="ag"
+              placeholder="add course eg english and math"
+            />
+            <input
+              type="number"
+              name="art"
+              id="art"
+              placeholder="add course eg english and math"
+            />
+          </form>
+          <div class="btn">
+            <button
+              onclick="addTableBody(); totalScore(); grading(); len(); sortFromHighestToLowest(); emptyCells(); studentAttendant();passedStudent(); "
+              class="btn2"
+            >
+              add data
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="holders">
+        <p id="studCount"></p>
+        <p id="position"></p>
+        <p id="average"></p>
+        <p id="spacedData"></p>
+      </div>
+    </div>
+    <footer>
+      <cite>copy right &copy 6<sup>th</sup> dec, 2019</cite><br />
+      <p>HobbyLuv concept</p>
+    </footer>
+    <script src="manage_data.js"></script>
+  </body>
+</html>
